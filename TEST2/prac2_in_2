@@ -1,0 +1,34 @@
+int i = 2 * 6;
+
+typedef struct t_alumne {
+   int a;
+   char b;
+   double c;
+   int d;
+} t_alumne;
+
+t_alumne alumne1, alumne2;
+
+int main(void) {
+   int vlocalint1, vlocalint2;
+   char vlocalchar1, vlocalchar2;
+   double varraydouble1[10];
+   int dummy;
+   
+   vlocalint1 = 0;
+   vlocalint2 = vlocalint1;
+   vlocalchar1 = 'a'; vlocalchar2 = 'b';
+   
+   for (i = 0; i < 10; i++) varraydouble1[i] = i;
+   
+   vlocalint1 += (((vlocalchar1++) * varraydouble1[3])/12) * 0.1415;
+   
+   varraydouble1[3] = varraydouble1[4];
+   varraydouble1[5] = alumne1.d + alumne2.a;
+   
+   vlocalint1 = (vlocalint1 > 0.28);
+   
+   vlocalint1 -= ((((vlocalint2 - 1) + 10) * 3) / 2);
+   
+   varraydouble1[0] = varraydouble1[alumne1.d * 5];
+} 

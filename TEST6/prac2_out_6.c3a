@@ -1,0 +1,48 @@
+SUBRUTINA main:
+
+	LINIA 1: START main
+	LINIA 2: PARAM 10.0
+	LINIA 3: PARAM 20.0
+	LINIA 4: $t1 := CALL func_calcDistancia, 2
+	LINIA 5: $t3 := FTI $t1
+	LINIA 6: $t2 := $t3
+	LINIA 7: GOTO 8
+	LINIA 8: RETURN $t2
+
+HALT
+
+SUBRUTINA func_calcDistancia:
+
+	LINIA 1: START func_calcDistancia
+	LINIA 2: err := 0
+	LINIA 3: dummy := 0
+	LINIA 4: distancia := 0.0
+	LINIA 5: $t1 := distancia2 LTF distancia1
+	LINIA 6: $t2 := FTI $t1
+	LINIA 7: IF $t2 GOTO 9
+	LINIA 8: GOTO 14
+	LINIA 9: $t3 := CHSI 1
+	LINIA 10: $t5 := ITF $t3
+	LINIA 11: $t4 := $t5
+	LINIA 12: GOTO 28
+	LINIA 13: GOTO 27
+	LINIA 14: $t6 := distancia1 EQ distancia2
+	LINIA 15: $t7 := FTI $t6
+	LINIA 16: IF $t7 GOTO 18
+	LINIA 17: GOTO 22
+	LINIA 18: $t8 := ITF 0
+	LINIA 19: $t4 := $t8
+	LINIA 20: GOTO 28
+	LINIA 21: GOTO 27
+	LINIA 22: $t9 := distancia2 SUBF distancia1
+	LINIA 23: $t10 := $t9 MULF 0.001
+	LINIA 24: distancia := $t10
+	LINIA 25: $t4 := distancia
+	LINIA 26: GOTO 28
+	LINIA 27: dummy := 0
+	LINIA 28: RETURN $t4
+
+HALT
+
+GLOBAL:
+

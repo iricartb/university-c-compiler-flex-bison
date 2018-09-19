@@ -1,0 +1,71 @@
+FUNCIO main
+
+[ + ] Parametres (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] RETURN INT 4 0
+
+[ + ] Variables Locals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] vlocalint1 INT 4 4
+		[ - ] vlocalint2 INT 4 8
+		[ - ] vlocalchar1 CHAR 1 12
+		[ - ] vlocalchar2 CHAR 1 13
+		[ - ] varraydouble1 DOUBLE[10] 8 14
+		[ - ] dummy INT 4 94
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] $t1 INT 4 98
+		[ - ] $t2 INT 4 102
+		[ - ] $t3 INT 4 106
+		[ - ] $t4 DOUBLE 8 110
+		[ - ] $t5 INT 4 118
+		[ - ] $t6 INT 4 122
+		[ - ] $t7 CHAR 1 126
+		[ - ] $t8 INT 4 127
+		[ - ] $t9 DOUBLE 8 131
+		[ - ] $t10 DOUBLE 8 139
+		[ - ] $t11 DOUBLE 8 147
+		[ - ] $t12 DOUBLE 8 155
+		[ - ] $t13 DOUBLE 8 163
+		[ - ] $t14 DOUBLE 8 171
+		[ - ] $t15 DOUBLE 8 179
+		[ - ] $t16 DOUBLE 8 187
+		[ - ] $t17 DOUBLE 8 195
+		[ - ] $t18 INT 4 203
+		[ - ] $t19 INT 4 207
+		[ - ] $t20 INT 4 211
+		[ - ] $t21 DOUBLE 8 215
+		[ - ] $t22 INT 4 223
+		[ - ] $t23 INT 4 227
+		[ - ] $t24 INT 4 231
+		[ - ] $t25 INT 4 235
+		[ - ] $t26 DOUBLE 8 239
+		[ - ] $t27 FLOAT 4 247
+		[ - ] $t28 FLOAT 4 251
+		[ - ] $t29 INT 4 255
+		[ - ] $t30 INT 4 259
+		[ - ] $t31 INT 4 263
+		[ - ] $t32 INT 4 267
+		[ - ] $t33 INT 4 271
+		[ - ] $t34 INT 4 275
+		[ - ] $t35 INT 4 279
+		[ - ] $t36 INT 4 283
+		[ - ] $t37 INT 4 287
+		[ - ] $t38 INT 4 291
+		[ - ] $t39 DOUBLE 8 295
+
+
+GLOBAL
+
+[ + ] Variables Globals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] i INT 4 4
+		[ - ] alumne1 STRUCT 17 8
+		[ - ] alumne2 STRUCT 17 25
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] $t1 INT 4 0
+
+

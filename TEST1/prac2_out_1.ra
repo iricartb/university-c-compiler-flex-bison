@@ -1,0 +1,47 @@
+FUNCIO main
+
+[ + ] Parametres (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] RETURN INT 4 0
+
+[ + ] Variables Locals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] vlocalint1 INT 4 4
+		[ - ] vlocalint2 INT 4 8
+		[ - ] vlocalchar1 CHAR 1 12
+		[ - ] vlocalstr1 CHAR[12] 1 13
+		[ - ] vlocalfloat1 FLOAT 4 25
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] $t1 INT 4 29
+
+
+GLOBAL
+
+[ + ] Variables Globals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] i INT 4 0
+		[ - ] j INT 4 4
+		[ - ] k INT 4 12
+		[ - ] vfloat FLOAT 4 16
+		[ - ] vfloat2 FLOAT 4 20
+		[ - ] vdouble DOUBLE 8 32
+		[ - ] vlong LONG 8 48
+		[ - ] vchar CHAR 1 56
+		[ - ] vchar2 CHAR 1 57
+		[ - ] vshort SHORT 2 60
+		[ - ] varrayf FLOAT[12] 4 62
+		[ - ] varrayi INT[7] 4 110
+		[ - ] varrayd DOUBLE[2] 8 138
+		[ - ] alumne1 STRUCT 13 154
+		[ - ] alumne2 STRUCT 13 167
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] $t1 INT 4 8
+		[ - ] $t2 DOUBLE 8 24
+		[ - ] $t3 LONG 8 40
+		[ - ] $t4 SHORT 2 58
+
+

@@ -1,0 +1,31 @@
+int i = 2 * 6;
+
+typedef struct t_alumne {
+   int a;
+   char b;
+   double c;
+   int d;
+} t_alumne;
+
+t_alumne alumne1, alumne2;
+
+int main(void) {
+   int vlocalint1, vlocalint2;
+   char vlocalchar1, vlocalchar2;
+   double varraydouble1[10];
+   
+   vlocalint1 = 0;
+   vlocalint2 = vlocalint1;
+   vlocalchar1 = 'a'; vlocalchar2 = 'b';
+   
+   if (((vlocalint1 >= 10) && (vlocalint1 <= 20)) || (vlocalint1 == 99)) vlocalint1 = 100;
+   else {
+      if ((vlocalint1 == 100) || (vlocalint1 == 101)) {
+         vlocalint1 = 15;
+         vlocalint2 = 15;
+         return 3 * 3;
+      }
+   }
+   
+   return -1.0;
+} 

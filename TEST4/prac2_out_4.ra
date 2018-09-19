@@ -1,0 +1,55 @@
+FUNCIO main
+
+[ + ] Parametres (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] RETURN INT 4 0
+
+[ + ] Variables Locals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] vlocalint1 INT 4 4
+		[ - ] vlocalint2 INT 4 8
+		[ - ] vlocalchar1 CHAR 1 12
+		[ - ] vlocalchar2 CHAR 1 13
+		[ - ] varraydouble1 DOUBLE[10] 8 14
+		[ - ] totalSum DOUBLE 8 94
+		[ - ] final INT 4 102
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] $t1 INT 4 106
+		[ - ] $t2 INT 4 110
+		[ - ] $t3 DOUBLE 8 114
+		[ - ] $t4 DOUBLE 8 122
+		[ - ] $t5 DOUBLE 8 130
+		[ - ] $t6 INT 4 138
+		[ - ] $t7 INT 4 142
+		[ - ] $t8 CHAR 1 146
+		[ - ] $t9 INT 4 147
+		[ - ] $t10 INT 4 151
+		[ - ] $t11 INT 4 155
+		[ - ] $t12 INT 4 159
+		[ - ] $t13 INT 4 163
+		[ - ] $t14 INT 4 167
+		[ - ] $t15 INT 4 171
+		[ - ] $t16 INT 4 175
+		[ - ] $t17 INT 4 179
+		[ - ] $t18 INT 4 183
+		[ - ] $t19 DOUBLE 8 187
+		[ - ] $t20 DOUBLE 8 195
+		[ - ] $t21 DOUBLE 8 203
+		[ - ] $t22 DOUBLE 8 211
+
+
+GLOBAL
+
+[ + ] Variables Globals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] i INT 4 4
+		[ - ] alumne1 STRUCT 17 8
+		[ - ] alumne2 STRUCT 17 25
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] $t1 INT 4 0
+
+

@@ -1,0 +1,26 @@
+int i = 0, j, k = 1.6;
+float vfloat = 1.193, vfloat2 = 2.13;
+double vdouble = 1.1999;
+long vlong = 65535;
+char vchar = 'a', vchar2 = 'b';
+short vshort = 9;
+float varrayf[12];
+int varrayi[7];
+double varrayd[2];
+
+typedef struct t_alumne {
+   int a;
+   char b;
+   double c;
+} t_alumne;
+
+t_alumne alumne1, alumne2;
+
+int main(void) {
+   int vlocalint1 = 10, vlocalint2 = 20;
+   char vlocalchar1;
+   char vlocalstr1[12] = "COMPILADORS2";
+   float vlocalfloat1;
+   
+   vlocalint1++;
+} 

@@ -1,0 +1,53 @@
+FUNCIO main
+
+[ + ] Parametres (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] RETURN INT 4 0
+
+[ + ] Variables Locals (nom_param tipus_param tipus_param_tamany offset)
+
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] $t1 FLOAT 4 4
+		[ - ] $t2 INT 4 8
+		[ - ] $t3 INT 4 12
+
+
+FUNCIO func_calcDistancia
+
+[ + ] Parametres (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] RETURN FLOAT 4 0
+		[ - ] distancia1 FLOAT 4 4
+		[ - ] distancia2 FLOAT 4 8
+
+[ + ] Variables Locals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] err INT 4 12
+		[ - ] dummy INT 4 16
+		[ - ] distancia FLOAT 4 20
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] $t1 FLOAT 4 24
+		[ - ] $t2 INT 4 28
+		[ - ] $t3 INT 4 32
+		[ - ] $t4 FLOAT 4 36
+		[ - ] $t5 FLOAT 4 40
+		[ - ] $t6 FLOAT 4 44
+		[ - ] $t7 INT 4 48
+		[ - ] $t8 FLOAT 4 52
+		[ - ] $t9 FLOAT 4 56
+		[ - ] $t10 FLOAT 4 60
+
+
+GLOBAL
+
+[ + ] Variables Globals (nom_param tipus_param tipus_param_tamany offset)
+
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+
+

@@ -1,0 +1,41 @@
+SUBRUTINA:
+
+	LINIA 1: START main
+	LINIA 2: alumne1[4] := 17
+	LINIA 3: alumne1[8] := 74
+	LINIA 4: alumne1[0] := 1.65
+	LINIA 5: PARAM alumne1
+	LINIA 6: CALL funcio_insertar_pes_adequat_alumne, 1
+	LINIA 7: RETURN
+
+HALT
+
+SUBRUTINA:
+
+	LINIA 1: START funcio_resta_f
+	LINIA 2: $t1 := arg1 SUBF arg2
+	LINIA 3: $t2 := $t1
+	LINIA 4: GOTO 5
+	LINIA 5: RETURN $t2
+
+HALT
+
+SUBRUTINA:
+
+	LINIA 1: START funcio_insertar_pes_adequat_alumne
+	LINIA 2: PARAM alumne[0]
+	LINIA 3: $t1 := ITF 1
+	LINIA 4: PARAM $t1
+	LINIA 5: $t2 := CALL funcio_resta_f, 2
+	LINIA 6: $t3 := ITF 100
+	LINIA 7: $t4 := $t2 MULF $t3
+	LINIA 8: $t5 := FTI $t4
+	LINIA 9: alumne[12] := $t5
+	LINIA 10: RETURN
+
+HALT
+
+GLOBAL:
+
+	LINIA 1: $t1 := 2 MULI 6
+	LINIA 2: i := $t1

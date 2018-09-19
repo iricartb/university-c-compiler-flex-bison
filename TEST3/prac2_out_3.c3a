@@ -1,0 +1,41 @@
+SUBRUTINA:
+
+	LINIA 1: START main
+	LINIA 2: vlocalint1 := 0
+	LINIA 3: vlocalint2 := vlocalint1
+	LINIA 4: vlocalchar1 := 'a'
+	LINIA 5: vlocalchar2 := 'b'
+	LINIA 6: $t1 := vlocalint1 GEI 10
+	LINIA 7: IF $t1 GOTO 9
+	LINIA 8: GOTO 12
+	LINIA 9: $t2 := vlocalint1 LEI 20
+	LINIA 10: IF $t2 GOTO 15
+	LINIA 11: GOTO 12
+	LINIA 12: $t3 := vlocalint1 EQ 99
+	LINIA 13: IF $t3 GOTO 15
+	LINIA 14: GOTO 17
+	LINIA 15: vlocalint1 := 100
+	LINIA 16: GOTO 28
+	LINIA 17: $t4 := vlocalint1 EQ 100
+	LINIA 18: IF $t4 GOTO 23
+	LINIA 19: GOTO 20
+	LINIA 20: $t5 := vlocalint1 EQ 101
+	LINIA 21: IF $t5 GOTO 23
+	LINIA 22: GOTO 28
+	LINIA 23: vlocalint1 := 15
+	LINIA 24: vlocalint2 := 15
+	LINIA 25: $t6 := 3 MULI 3
+	LINIA 26: $t7 := $t6
+	LINIA 27: GOTO 32
+	LINIA 28: $t8 := CHSF 1.0
+	LINIA 29: $t9 := FTI $t8
+	LINIA 30: $t7 := $t9
+	LINIA 31: GOTO 32
+	LINIA 32: RETURN $t7
+
+HALT
+
+GLOBAL:
+
+	LINIA 1: $t1 := 2 MULI 6
+	LINIA 2: i := $t1

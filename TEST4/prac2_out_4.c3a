@@ -1,0 +1,57 @@
+SUBRUTINA:
+
+	LINIA 1: START main
+	LINIA 2: vlocalint1 := 0
+	LINIA 3: vlocalint2 := vlocalint1
+	LINIA 4: vlocalchar1 := 'a'
+	LINIA 5: vlocalchar2 := 'b'
+	LINIA 6: $t1 := vlocalint1 LEI 10
+	LINIA 7: IF $t1 GOTO 9
+	LINIA 8: GOTO 18
+	LINIA 9: $t2 := 8 MULI vlocalint1
+	LINIA 10: $t3 := varraydouble1[$t2]
+	LINIA 11: $t4 := ITD vlocalint2
+	LINIA 12: $t5 := $t4 ADDD $t3
+	LINIA 13: $t6 := DTI $t5
+	LINIA 14: vlocalint2 := $t6
+	LINIA 15: $t7 := vlocalint1 ADDI 1
+	LINIA 16: vlocalint1 := $t7
+	LINIA 17: GOTO 6
+	LINIA 18: $t8 := ITC vlocalint1
+	LINIA 19: vlocalchar1 := $t8
+	LINIA 20: $t9 := vlocalint1 ADDI 1
+	LINIA 21: vlocalint1 := $t9
+	LINIA 22: $t10 := i LTI 10
+	LINIA 23: IF $t10 GOTO 25
+	LINIA 24: GOTO 28
+	LINIA 25: $t11 := i ADDI 1
+	LINIA 26: i := $t11
+	LINIA 27: GOTO 22
+	LINIA 28: $t12 := vlocalint1 LTI 100
+	LINIA 29: IF $t12 GOTO 18
+	LINIA 30: GOTO 31
+	LINIA 31: i := 0
+	LINIA 32: $t13 := i GTI 10
+	LINIA 33: IF $t13 GOTO 48
+	LINIA 34: GOTO 38
+	LINIA 35: $t14 := i ADDI 1
+	LINIA 36: i := $t14
+	LINIA 37: GOTO 32
+	LINIA 38: $t15 := alumne2[13]
+	LINIA 39: $t16 := alumne1[0]
+	LINIA 40: $t17 := $t15 MULI $t16
+	LINIA 41: $t18 := 8 MULI $t17
+	LINIA 42: $t19 := varraydouble1[$t18]
+	LINIA 43: $t20 := ITD i
+	LINIA 44: $t21 := $t19 MULD $t20
+	LINIA 45: $t22 := totalSum ADDD $t21
+	LINIA 46: totalSum := $t22
+	LINIA 47: GOTO 35
+	LINIA 48: RETURN
+
+HALT
+
+GLOBAL:
+
+	LINIA 1: $t1 := 2 MULI 6
+	LINIA 2: i := $t1

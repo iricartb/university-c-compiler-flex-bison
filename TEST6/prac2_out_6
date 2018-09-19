@@ -1,0 +1,389 @@
+>>> linia 1: ID_FLOAT REDUCE TO type_specifier
+>>> linia 1: type_specifier REDUCE TO declaration_specifiers
+>>> linia 1: ID_IDENTIFICADOR -> [func_calcDistancia] REDUCE TO declarator
+>>> linia 1: ID_FLOAT REDUCE TO type_specifier
+>>> linia 1: type_specifier REDUCE TO declaration_specifiers
+>>> linia 1: ID_IDENTIFICADOR -> [distancia1] REDUCE TO declarator
+>>> linia 1: declaration_specifiers declarator REDUCE TO parameter_declaration
+>>> linia 1: parameter_declaration REDUCE TO parameter_list
+>>> linia 1: ID_FLOAT REDUCE TO type_specifier
+>>> linia 1: type_specifier REDUCE TO declaration_specifiers
+>>> linia 1: ID_IDENTIFICADOR -> [distancia2] REDUCE TO declarator
+>>> linia 1: declaration_specifiers declarator REDUCE TO parameter_declaration
+>>> linia 1: parameter_list,parameter_declaration REDUCE TO parameter_list
+>>> linia 1: declarator(parameter_list) REDUCE TO declarator
+>>> linia 1: declarator REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 1: la funcio -> [func_calcDistancia] s'ha insertat correctament a la taula de simbols
+	[ - ] Funcio: func_calcDistancia
+	[ - ] 2 Parametres:
+			Tipus: FLOAT      Array: NO
+			Tipus: FLOAT      Array: NO
+	[ - ] Tipus Retorn: FLOAT    
+>>> linia 1: init_declarator REDUCE TO init_declarator_list
+>>> linia 1: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 1: declaration REDUCE external_declaration
+>>> linia 1: external_declaration REDUCE TO translation_unit
+>>> linia 3: ID_INT REDUCE TO type_specifier
+>>> linia 3: type_specifier REDUCE TO declaration_specifiers
+>>> linia 3: ID_IDENTIFICADOR -> [main] REDUCE TO declarator
+>>> linia 3: ID_VOID REDUCE TO type_specifier
+>>> linia 3: type_specifier REDUCE TO declaration_specifiers
+>>> linia 3: declaration_specifiers REDUCE TO parameter_declaration
+>>> linia 3: parameter_declaration REDUCE TO parameter_list
+>>> linia 3: declarator(parameter_list) REDUCE TO declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 3: s'ha introduit el nou ambit amb identificador -> [0]
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 3: la funcio -> [main] s'ha insertat correctament a la taula de simbols
+	[ - ] Funcio: main
+	[ - ] 0 Parametres:
+	[ - ] Tipus Retorn: INT      
+>>> linia 4: ID_IDENTIFICADOR -> [func_calcDistancia] REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 4: la funcio -> [func_calcDistancia] s'ha trobat en la taula de simbols
+>>> linia 4: primary_expression REDUCE TO postfix_expression
+>>> linia 4: ID_FLOATING_CONSTANT -> [10.0] REDUCE TO constant
+>>> linia 4: constant REDUCE TO primary_expression
+>>> linia 4: primary_expression REDUCE TO postfix_expression
+>>> linia 4: postfix_expression REDUCE TO unary_expression
+>>> linia 4: unary_expression REDUCE TO cast_expression
+>>> linia 4: cast_expression REDUCE TO multiplicative_expression
+>>> linia 4: multiplicative_expression REDUCE TO additive_expression
+>>> linia 4: additive_expression REDUCE TO relational_expression
+>>> linia 4: relational_expression REDUCE TO equality_expression
+>>> linia 4: equality_expression REDUCE TO logical_AND_expression
+>>> linia 4: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 4: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 4: conditional_expression REDUCE TO assignment_expression
+>>> linia 4: assignment_expression REDUCE TO argument_expression_list
+>>> linia 4: ID_FLOATING_CONSTANT -> [20.0] REDUCE TO constant
+>>> linia 4: constant REDUCE TO primary_expression
+>>> linia 4: primary_expression REDUCE TO postfix_expression
+>>> linia 4: postfix_expression REDUCE TO unary_expression
+>>> linia 4: unary_expression REDUCE TO cast_expression
+>>> linia 4: cast_expression REDUCE TO multiplicative_expression
+>>> linia 4: multiplicative_expression REDUCE TO additive_expression
+>>> linia 4: additive_expression REDUCE TO relational_expression
+>>> linia 4: relational_expression REDUCE TO equality_expression
+>>> linia 4: equality_expression REDUCE TO logical_AND_expression
+>>> linia 4: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 4: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 4: conditional_expression REDUCE TO assignment_expression
+>>> linia 4: argument_expression_list,assignment_expression REDUCE TO argument_expression_list
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 4: s'ha efectuat la crida a la funcio -> [func_calcDistancia]
+>>> linia 4: postfix_expression(argument_expression_list) REDUCE TO postfix_expression
+>>> linia 4: postfix_expression REDUCE TO unary_expression
+>>> linia 4: unary_expression REDUCE TO cast_expression
+>>> linia 4: cast_expression REDUCE TO multiplicative_expression
+>>> linia 4: multiplicative_expression REDUCE TO additive_expression
+>>> linia 4: additive_expression REDUCE TO relational_expression
+>>> linia 4: relational_expression REDUCE TO equality_expression
+>>> linia 4: equality_expression REDUCE TO logical_AND_expression
+>>> linia 4: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 4: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 4: conditional_expression REDUCE TO assignment_expression
+>>> linia 4: assignment_expression REDUCE TO expression
+>>> linia 4: ID_RETURN expression; REDUCE TO jump_statement
+>>> linia 4: jump_statement REDUCE TO statement
+>>> linia 4: statement REDUCE TO statement_list
+>>> linia 5: { statement_list } REDUCE TO compound_statement
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 5: s'ha eliminat l'ambit amb identificador -> [0]
+>>> linia 5: declaration_specifiers declarator compound_statement REDUCE TO function_definition
+>>> linia 5: function_definition REDUCE TO external_declaration
+>>> linia 5: translation_unit external_declaration REDUCE TO translation_unit
+>>> linia 7: ID_FLOAT REDUCE TO type_specifier
+>>> linia 7: type_specifier REDUCE TO declaration_specifiers
+>>> linia 7: ID_IDENTIFICADOR -> [func_calcDistancia] REDUCE TO declarator
+>>> linia 7: ID_FLOAT REDUCE TO type_specifier
+>>> linia 7: type_specifier REDUCE TO declaration_specifiers
+>>> linia 7: ID_IDENTIFICADOR -> [distancia1] REDUCE TO declarator
+>>> linia 7: declaration_specifiers declarator REDUCE TO parameter_declaration
+>>> linia 7: parameter_declaration REDUCE TO parameter_list
+>>> linia 7: ID_FLOAT REDUCE TO type_specifier
+>>> linia 7: type_specifier REDUCE TO declaration_specifiers
+>>> linia 7: ID_IDENTIFICADOR -> [distancia2] REDUCE TO declarator
+>>> linia 7: declaration_specifiers declarator REDUCE TO parameter_declaration
+>>> linia 7: parameter_list,parameter_declaration REDUCE TO parameter_list
+>>> linia 7: declarator(parameter_list) REDUCE TO declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 7: s'ha introduit el nou ambit amb identificador -> [0]
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 7: la funcio -> [func_calcDistancia] s'ha trobat en la taula de simbols
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 7: la funcio -> [func_calcDistancia] s'ha definit correctament
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 7: s'ha introduit el parametre -> [distancia1] com a variable local de la funcio
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 7: s'ha introduit el parametre -> [distancia2] com a variable local de la funcio
+>>> linia 8: ID_INT REDUCE TO type_specifier
+>>> linia 8: type_specifier REDUCE TO declaration_specifiers
+>>> linia 8: ID_IDENTIFICADOR -> [err] REDUCE TO declarator
+>>> linia 8: ID_INTEGER_CONSTANT -> [0] REDUCE TO constant
+>>> linia 8: constant REDUCE TO primary_expression
+>>> linia 8: primary_expression REDUCE TO postfix_expression
+>>> linia 8: postfix_expression REDUCE TO unary_expression
+>>> linia 8: unary_expression REDUCE TO cast_expression
+>>> linia 8: cast_expression REDUCE TO multiplicative_expression
+>>> linia 8: multiplicative_expression REDUCE TO additive_expression
+>>> linia 8: additive_expression REDUCE TO relational_expression
+>>> linia 8: relational_expression REDUCE TO equality_expression
+>>> linia 8: equality_expression REDUCE TO logical_AND_expression
+>>> linia 8: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 8: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 8: conditional_expression REDUCE TO assignment_expression
+>>> linia 8: assignment_expression REDUCE TO initializer
+>>> linia 8: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 8: la variable -> [err] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: err
+			Tipus: INT        Ambit 0  Array: NO
+>>> linia 8: init_declarator REDUCE TO init_declarator_list
+>>> linia 8: ID_IDENTIFICADOR -> [dummy] REDUCE TO declarator
+>>> linia 8: ID_INTEGER_CONSTANT -> [0] REDUCE TO constant
+>>> linia 8: constant REDUCE TO primary_expression
+>>> linia 8: primary_expression REDUCE TO postfix_expression
+>>> linia 8: postfix_expression REDUCE TO unary_expression
+>>> linia 8: unary_expression REDUCE TO cast_expression
+>>> linia 8: cast_expression REDUCE TO multiplicative_expression
+>>> linia 8: multiplicative_expression REDUCE TO additive_expression
+>>> linia 8: additive_expression REDUCE TO relational_expression
+>>> linia 8: relational_expression REDUCE TO equality_expression
+>>> linia 8: equality_expression REDUCE TO logical_AND_expression
+>>> linia 8: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 8: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 8: conditional_expression REDUCE TO assignment_expression
+>>> linia 8: assignment_expression REDUCE TO initializer
+>>> linia 8: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 8: la variable -> [dummy] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: dummy
+			Tipus: INT        Ambit 0  Array: NO
+>>> linia 8: init_declarator_list,init_declarator REDUCE TO init_declarator_list
+>>> linia 8: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 8: declaration REDUCE TO declaration_list
+>>> linia 9: ID_FLOAT REDUCE TO type_specifier
+>>> linia 9: type_specifier REDUCE TO declaration_specifiers
+>>> linia 9: ID_IDENTIFICADOR -> [distancia] REDUCE TO declarator
+>>> linia 9: ID_FLOATING_CONSTANT -> [0.0] REDUCE TO constant
+>>> linia 9: constant REDUCE TO primary_expression
+>>> linia 9: primary_expression REDUCE TO postfix_expression
+>>> linia 9: postfix_expression REDUCE TO unary_expression
+>>> linia 9: unary_expression REDUCE TO cast_expression
+>>> linia 9: cast_expression REDUCE TO multiplicative_expression
+>>> linia 9: multiplicative_expression REDUCE TO additive_expression
+>>> linia 9: additive_expression REDUCE TO relational_expression
+>>> linia 9: relational_expression REDUCE TO equality_expression
+>>> linia 9: equality_expression REDUCE TO logical_AND_expression
+>>> linia 9: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 9: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 9: conditional_expression REDUCE TO assignment_expression
+>>> linia 9: assignment_expression REDUCE TO initializer
+>>> linia 9: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 9: la variable -> [distancia] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: distancia
+			Tipus: FLOAT      Ambit 0  Array: NO
+>>> linia 9: init_declarator REDUCE TO init_declarator_list
+>>> linia 9: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 9: declaration_list declaration REDUCE TO declaration_list
+>>> linia 11: ID_IDENTIFICADOR -> [distancia2] REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 11: la variable -> [distancia2] s'ha trobat en la taula de simbols
+>>> linia 11: primary_expression REDUCE TO postfix_expression
+>>> linia 11: postfix_expression REDUCE TO unary_expression
+>>> linia 11: unary_expression REDUCE TO cast_expression
+>>> linia 11: cast_expression REDUCE TO multiplicative_expression
+>>> linia 11: multiplicative_expression REDUCE TO additive_expression
+>>> linia 11: additive_expression REDUCE TO relational_expression
+>>> linia 11: ID_IDENTIFICADOR -> [distancia1] REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 11: la variable -> [distancia1] s'ha trobat en la taula de simbols
+>>> linia 11: primary_expression REDUCE TO postfix_expression
+>>> linia 11: postfix_expression REDUCE TO unary_expression
+>>> linia 11: unary_expression REDUCE TO cast_expression
+>>> linia 11: cast_expression REDUCE TO multiplicative_expression
+>>> linia 11: multiplicative_expression REDUCE TO additive_expression
+>>> linia 11: relational_expression '<' additive_expression REDUCE TO relational_expression
+>>> linia 11: relational_expression REDUCE TO equality_expression
+>>> linia 11: equality_expression REDUCE TO logical_AND_expression
+>>> linia 11: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 11: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 11: conditional_expression REDUCE TO assignment_expression
+>>> linia 11: assignment_expression REDUCE TO expression
+>>> linia 11: '-' REDUCE TO unary_operator
+>>> linia 11: ID_INTEGER_CONSTANT -> [1] REDUCE TO constant
+>>> linia 11: constant REDUCE TO primary_expression
+>>> linia 11: primary_expression REDUCE TO postfix_expression
+>>> linia 11: postfix_expression REDUCE TO unary_expression
+>>> linia 11: unary_expression REDUCE TO cast_expression
+>>> linia 11: unary_operator cast_expression REDUCE TO unary_expression
+>>> linia 11: unary_expression REDUCE TO cast_expression
+>>> linia 11: cast_expression REDUCE TO multiplicative_expression
+>>> linia 11: multiplicative_expression REDUCE TO additive_expression
+>>> linia 11: additive_expression REDUCE TO relational_expression
+>>> linia 11: relational_expression REDUCE TO equality_expression
+>>> linia 11: equality_expression REDUCE TO logical_AND_expression
+>>> linia 11: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 11: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 11: conditional_expression REDUCE TO assignment_expression
+>>> linia 11: assignment_expression REDUCE TO expression
+>>> linia 11: ID_RETURN expression; REDUCE TO jump_statement
+>>> linia 11: jump_statement REDUCE TO statement
+>>> linia 13: ID_IDENTIFICADOR -> [distancia1] REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 13: la variable -> [distancia1] s'ha trobat en la taula de simbols
+>>> linia 13: primary_expression REDUCE TO postfix_expression
+>>> linia 13: postfix_expression REDUCE TO unary_expression
+>>> linia 13: unary_expression REDUCE TO cast_expression
+>>> linia 13: cast_expression REDUCE TO multiplicative_expression
+>>> linia 13: multiplicative_expression REDUCE TO additive_expression
+>>> linia 13: additive_expression REDUCE TO relational_expression
+>>> linia 13: relational_expression REDUCE TO equality_expression
+>>> linia 13: ID_IDENTIFICADOR -> [distancia2] REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 13: la variable -> [distancia2] s'ha trobat en la taula de simbols
+>>> linia 13: primary_expression REDUCE TO postfix_expression
+>>> linia 13: postfix_expression REDUCE TO unary_expression
+>>> linia 13: unary_expression REDUCE TO cast_expression
+>>> linia 13: cast_expression REDUCE TO multiplicative_expression
+>>> linia 13: multiplicative_expression REDUCE TO additive_expression
+>>> linia 13: additive_expression REDUCE TO relational_expression
+>>> linia 13: equality_expression == relational_expression REDUCE TO equality_expression
+>>> linia 13: equality_expression REDUCE TO logical_AND_expression
+>>> linia 13: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 13: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 13: conditional_expression REDUCE TO assignment_expression
+>>> linia 13: assignment_expression REDUCE TO expression
+>>> linia 13: ID_INTEGER_CONSTANT -> [0] REDUCE TO constant
+>>> linia 13: constant REDUCE TO primary_expression
+>>> linia 13: primary_expression REDUCE TO postfix_expression
+>>> linia 13: postfix_expression REDUCE TO unary_expression
+>>> linia 13: unary_expression REDUCE TO cast_expression
+>>> linia 13: cast_expression REDUCE TO multiplicative_expression
+>>> linia 13: multiplicative_expression REDUCE TO additive_expression
+>>> linia 13: additive_expression REDUCE TO relational_expression
+>>> linia 13: relational_expression REDUCE TO equality_expression
+>>> linia 13: equality_expression REDUCE TO logical_AND_expression
+>>> linia 13: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 13: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 13: conditional_expression REDUCE TO assignment_expression
+>>> linia 13: assignment_expression REDUCE TO expression
+>>> linia 13: ID_RETURN expression; REDUCE TO jump_statement
+>>> linia 13: jump_statement REDUCE TO statement
+>>> linia 15: ID_IDENTIFICADOR -> [distancia] REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 15: la variable -> [distancia] s'ha trobat en la taula de simbols
+>>> linia 15: primary_expression REDUCE TO postfix_expression
+>>> linia 15: postfix_expression REDUCE TO unary_expression
+>>> linia 15: '=' REDUCE TO assignment_operator
+>>> linia 15: ID_IDENTIFICADOR -> [distancia2] REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 15: la variable -> [distancia2] s'ha trobat en la taula de simbols
+>>> linia 15: primary_expression REDUCE TO postfix_expression
+>>> linia 15: postfix_expression REDUCE TO unary_expression
+>>> linia 15: unary_expression REDUCE TO cast_expression
+>>> linia 15: cast_expression REDUCE TO multiplicative_expression
+>>> linia 15: multiplicative_expression REDUCE TO additive_expression
+>>> linia 15: ID_IDENTIFICADOR -> [distancia1] REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 15: la variable -> [distancia1] s'ha trobat en la taula de simbols
+>>> linia 15: primary_expression REDUCE TO postfix_expression
+>>> linia 15: postfix_expression REDUCE TO unary_expression
+>>> linia 15: unary_expression REDUCE TO cast_expression
+>>> linia 15: cast_expression REDUCE TO multiplicative_expression
+>>> linia 15: REDUCE additive_expression '-' multiplicative_expression REDUCE TO additive_expression
+>>> linia 15: additive_expression REDUCE TO relational_expression
+>>> linia 15: relational_expression REDUCE TO equality_expression
+>>> linia 15: equality_expression REDUCE TO logical_AND_expression
+>>> linia 15: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 15: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 15: conditional_expression REDUCE TO assignment_expression
+>>> linia 15: assignment_expression REDUCE TO expression
+>>> linia 15: (expression) REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 15: la variable -> [distancia2] s'ha trobat en la taula de simbols
+>>> linia 15: primary_expression REDUCE TO postfix_expression
+>>> linia 15: postfix_expression REDUCE TO unary_expression
+>>> linia 15: unary_expression REDUCE TO cast_expression
+>>> linia 15: cast_expression REDUCE TO multiplicative_expression
+>>> linia 15: ID_FLOATING_CONSTANT -> [0.001] REDUCE TO constant
+>>> linia 15: constant REDUCE TO primary_expression
+>>> linia 15: primary_expression REDUCE TO postfix_expression
+>>> linia 15: postfix_expression REDUCE TO unary_expression
+>>> linia 15: unary_expression REDUCE TO cast_expression
+>>> linia 15: cast_expression REDUCE TO multiplicative_expression
+>>> linia 15: multiplicative_expression REDUCE TO additive_expression
+>>> linia 15: additive_expression REDUCE TO relational_expression
+>>> linia 15: relational_expression REDUCE TO equality_expression
+>>> linia 15: equality_expression REDUCE TO logical_AND_expression
+>>> linia 15: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 15: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 15: conditional_expression REDUCE TO assignment_expression
+>>> linia 15: assignment_expression REDUCE TO expression
+>>> linia 15: (expression) REDUCE TO primary_expression
+>>> linia 15: primary_expression REDUCE TO postfix_expression
+>>> linia 15: postfix_expression REDUCE TO unary_expression
+>>> linia 15: unary_expression REDUCE TO cast_expression
+>>> linia 15: multiplicative_expression '*' cast_expression REDUCE TO multiplicative_expression
+>>> linia 15: multiplicative_expression REDUCE TO additive_expression
+>>> linia 15: additive_expression REDUCE TO relational_expression
+>>> linia 15: relational_expression REDUCE TO equality_expression
+>>> linia 15: equality_expression REDUCE TO logical_AND_expression
+>>> linia 15: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 15: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 15: conditional_expression REDUCE TO assignment_expression
+>>> linia 15: assignment_expression REDUCE TO expression
+>>> linia 15: (expression) REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 15: la variable -> [distancia2] s'ha trobat en la taula de simbols
+>>> linia 15: primary_expression REDUCE TO postfix_expression
+>>> linia 15: postfix_expression REDUCE TO unary_expression
+>>> linia 15: unary_expression REDUCE TO cast_expression
+>>> linia 15: cast_expression REDUCE TO multiplicative_expression
+>>> linia 15: multiplicative_expression REDUCE TO additive_expression
+>>> linia 15: additive_expression REDUCE TO relational_expression
+>>> linia 15: relational_expression REDUCE TO equality_expression
+>>> linia 15: equality_expression REDUCE TO logical_AND_expression
+>>> linia 15: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 15: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 15: conditional_expression REDUCE TO assignment_expression
+>>> linia 15: unary_expression assignment_operator assignment_expression REDUCE TO assignment_expression
+>>> linia 15: assignment_expression REDUCE TO expression
+>>> linia 15: expression; REDUCE TO expression_statement
+>>> linia 15: expression_statement REDUCE TO statement
+>>> linia 15: statement REDUCE TO statement_list
+>>> linia 16: ID_IDENTIFICADOR -> [distancia] REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 16: la variable -> [distancia] s'ha trobat en la taula de simbols
+>>> linia 16: primary_expression REDUCE TO postfix_expression
+>>> linia 16: postfix_expression REDUCE TO unary_expression
+>>> linia 16: unary_expression REDUCE TO cast_expression
+>>> linia 16: cast_expression REDUCE TO multiplicative_expression
+>>> linia 16: multiplicative_expression REDUCE TO additive_expression
+>>> linia 16: additive_expression REDUCE TO relational_expression
+>>> linia 16: relational_expression REDUCE TO equality_expression
+>>> linia 16: equality_expression REDUCE TO logical_AND_expression
+>>> linia 16: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 16: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 16: conditional_expression REDUCE TO assignment_expression
+>>> linia 16: assignment_expression REDUCE TO expression
+>>> linia 16: ID_RETURN expression; REDUCE TO jump_statement
+>>> linia 16: jump_statement REDUCE TO statement
+>>> linia 16: statement_list statement REDUCE TO statement_list
+>>> linia 17: { statement_list } REDUCE TO compound_statement
+>>> linia 17: compound_statement REDUCE TO statement
+>>> linia 17: ID_IF (expression) statement ID_ELSE statement REDUCE TO selection_statement
+>>> linia 17: selection_statement REDUCE TO statement
+>>> linia 17: statement REDUCE TO statement_list
+>>> linia 18: { statement_list } REDUCE TO compound_statement
+>>> linia 18: compound_statement REDUCE TO statement
+>>> linia 18: ID_IF (expression) statement ID_ELSE statement REDUCE TO selection_statement
+>>> linia 18: selection_statement REDUCE TO statement
+>>> linia 18: statement REDUCE TO statement_list
+>>> linia 19: ID_IDENTIFICADOR -> [dummy] REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 19: la variable -> [dummy] s'ha trobat en la taula de simbols
+>>> linia 19: primary_expression REDUCE TO postfix_expression
+>>> linia 19: postfix_expression REDUCE TO unary_expression
+>>> linia 19: '=' REDUCE TO assignment_operator
+>>> linia 19: ID_INTEGER_CONSTANT -> [0] REDUCE TO constant
+>>> linia 19: constant REDUCE TO primary_expression
+>>> linia 19: primary_expression REDUCE TO postfix_expression
+>>> linia 19: postfix_expression REDUCE TO unary_expression
+>>> linia 19: unary_expression REDUCE TO cast_expression
+>>> linia 19: cast_expression REDUCE TO multiplicative_expression
+>>> linia 19: multiplicative_expression REDUCE TO additive_expression
+>>> linia 19: additive_expression REDUCE TO relational_expression
+>>> linia 19: relational_expression REDUCE TO equality_expression
+>>> linia 19: equality_expression REDUCE TO logical_AND_expression
+>>> linia 19: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 19: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 19: conditional_expression REDUCE TO assignment_expression
+>>> linia 19: unary_expression assignment_operator assignment_expression REDUCE TO assignment_expression
+>>> linia 19: assignment_expression REDUCE TO expression
+>>> linia 19: expression; REDUCE TO expression_statement
+>>> linia 19: expression_statement REDUCE TO statement
+>>> linia 19: statement_list statement REDUCE TO statement_list
+>>> linia 20: { declaration_list statement_list } REDUCE TO compound_statement
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 20: s'ha eliminat l'ambit amb identificador -> [0]
+>>> linia 20: declaration_specifiers declarator compound_statement REDUCE TO function_definition
+>>> linia 20: function_definition REDUCE TO external_declaration
+>>> linia 20: translation_unit external_declaration REDUCE TO translation_unit

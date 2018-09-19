@@ -1,0 +1,20 @@
+float func_calcDistancia(float distancia1, float distancia2);
+
+int main(void) {
+   return func_calcDistancia(10.0, 20.0);   
+}
+
+float func_calcDistancia(float distancia1, float distancia2) {
+   int err = 0, dummy = 0;
+   float distancia = 0.0;
+   
+   if (distancia2 < distancia1) return -1;
+   else {
+      if (distancia1 == distancia2) return 0;
+      else {
+         distancia = ((distancia2 - distancia1) * (0.001));
+         return distancia;   
+      }
+   }
+   dummy = 0;
+}

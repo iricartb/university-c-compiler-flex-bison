@@ -1,0 +1,64 @@
+FUNCIO main
+
+[ + ] Parametres (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] RETURN INT 4 0
+
+[ + ] Variables Locals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] vlocalint1 INT 4 4
+		[ - ] vlocalint2 INT 4 8
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+
+
+FUNCIO funcio_resta_f
+
+[ + ] Parametres (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] RETURN FLOAT 4 0
+		[ - ] arg1 FLOAT 4 4
+		[ - ] arg2 FLOAT 4 8
+
+[ + ] Variables Locals (nom_param tipus_param tipus_param_tamany offset)
+
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] $t1 FLOAT 4 12
+		[ - ] $t2 FLOAT 4 16
+
+
+FUNCIO funcio_insertar_pes_adequat_alumne
+
+[ + ] Parametres (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] RETURN VOID 0 0
+		[ - ] alumne STRUCT 16 0
+
+[ + ] Variables Locals (nom_param tipus_param tipus_param_tamany offset)
+
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] $t1 FLOAT 4 16
+		[ - ] $t2 FLOAT 4 20
+		[ - ] $t3 FLOAT 4 24
+		[ - ] $t4 FLOAT 4 28
+		[ - ] $t5 INT 4 32
+
+
+GLOBAL
+
+[ + ] Variables Globals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] i INT 4 4
+		[ - ] alumne1 STRUCT 16 8
+		[ - ] alumne2 STRUCT 16 24
+
+[ + ] Variables Temporals (nom_param tipus_param tipus_param_tamany offset)
+
+		[ - ] $t1 INT 4 0
+
+

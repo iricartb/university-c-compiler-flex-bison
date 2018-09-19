@@ -1,0 +1,68 @@
+SUBRUTINA:
+
+	LINIA 1: START main
+	LINIA 2: vlocalint1 := 0
+	LINIA 3: vlocalint2 := vlocalint1
+	LINIA 4: vlocalchar1 := 'a'
+	LINIA 5: vlocalchar2 := 'b'
+	LINIA 6: i := 0
+	LINIA 7: $t1 := i LTI 10
+	LINIA 8: IF $t1 GOTO 13
+	LINIA 9: GOTO 17
+	LINIA 10: $t2 := i ADDI 1
+	LINIA 11: i := $t2
+	LINIA 12: GOTO 7
+	LINIA 13: $t3 := 8 MULI i
+	LINIA 14: $t4 := ITD i
+	LINIA 15: varraydouble1[$t3] := $t4
+	LINIA 16: GOTO 10
+	LINIA 17: $t5 := CTI vlocalchar1
+	LINIA 18: $t6 := $t5 ADDI 1
+	LINIA 19: $t7 := ITC $t6
+	LINIA 20: vlocalchar1 := $t7
+	LINIA 21: $t8 := 8 MULI 3
+	LINIA 22: $t9 := varraydouble1[$t8]
+	LINIA 23: $t10 := ITD $t6
+	LINIA 24: $t11 := $t10 MULD $t9
+	LINIA 25: $t12 := ITD 12
+	LINIA 26: $t13 := $t11 DIVD $t12
+	LINIA 27: $t14 := FTD 0.1415
+	LINIA 28: $t15 := $t13 MULD $t14
+	LINIA 29: $t16 := ITD vlocalint1
+	LINIA 30: $t17 := $t16 ADDD $t15
+	LINIA 31: $t18 := DTI $t17
+	LINIA 32: vlocalint1 := $t18
+	LINIA 33: $t19 := 8 MULI 3
+	LINIA 34: $t20 := 8 MULI 4
+	LINIA 35: $t21 := varraydouble1[$t20]
+	LINIA 36: varraydouble1[$t19] := $t21
+	LINIA 37: $t22 := 8 MULI 5
+	LINIA 38: $t23 := alumne1[13]
+	LINIA 39: $t24 := alumne2[0]
+	LINIA 40: $t25 := $t23 ADDI $t24
+	LINIA 41: $t26 := ITD $t25
+	LINIA 42: varraydouble1[$t22] := $t26
+	LINIA 43: $t27 := ITF vlocalint1
+	LINIA 44: $t28 := $t27 GTF 0.28
+	LINIA 45: $t29 := FTI $t28
+	LINIA 46: vlocalint1 := $t29
+	LINIA 47: $t30 := vlocalint2 SUBI 1
+	LINIA 48: $t31 := $t30 ADDI 10
+	LINIA 49: $t32 := $t31 MULI 3
+	LINIA 50: $t33 := $t32 DIVI 2
+	LINIA 51: $t34 := vlocalint1 SUBI $t33
+	LINIA 52: vlocalint1 := $t34
+	LINIA 53: $t35 := 8 MULI 0
+	LINIA 54: $t36 := alumne1[13]
+	LINIA 55: $t37 := $t36 MULI 5
+	LINIA 56: $t38 := 8 MULI $t37
+	LINIA 57: $t39 := varraydouble1[$t38]
+	LINIA 58: varraydouble1[$t35] := $t39
+	LINIA 59: RETURN
+
+HALT
+
+GLOBAL:
+
+	LINIA 1: $t1 := 2 MULI 6
+	LINIA 2: i := $t1

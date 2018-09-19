@@ -1,0 +1,29 @@
+int i = 2 * 6;
+
+typedef struct t_alumne {
+   float altura;
+   int edat;
+   int pes;
+   int pes_adequat;
+} t_alumne;
+
+t_alumne alumne1, alumne2;
+
+void funcio_insertar_pes_adequat_alumne(t_alumne alumne); 
+
+int main(void) {
+   int vlocalint1, vlocalint2;
+   alumne1.edat = 17;
+   alumne1.pes = 74;
+   alumne1.altura = 1.65;
+   
+   funcio_insertar_pes_adequat_alumne(alumne1);
+}
+
+float funcio_resta_f(float arg1, float arg2) {
+   return arg1 - arg2;
+}
+
+void funcio_insertar_pes_adequat_alumne(t_alumne alumne) {
+   alumne.pes_adequat = (funcio_resta_f(alumne.altura, 1) * 100);   
+}

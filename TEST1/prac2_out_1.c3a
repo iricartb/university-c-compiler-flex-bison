@@ -1,0 +1,38 @@
+SUBRUTINA main:
+
+	LINIA 1: START main
+	LINIA 2: vlocalint1 := 10
+	LINIA 3: vlocalint2 := 20
+	LINIA 4: vlocalstr1[0] := 'C'
+	LINIA 5: vlocalstr1[1] := 'O'
+	LINIA 6: vlocalstr1[2] := 'M'
+	LINIA 7: vlocalstr1[3] := 'P'
+	LINIA 8: vlocalstr1[4] := 'I'
+	LINIA 9: vlocalstr1[5] := 'L'
+	LINIA 10: vlocalstr1[6] := 'A'
+	LINIA 11: vlocalstr1[7] := 'D'
+	LINIA 12: vlocalstr1[8] := 'O'
+	LINIA 13: vlocalstr1[9] := 'R'
+	LINIA 14: vlocalstr1[10] := 'S'
+	LINIA 15: vlocalstr1[11] := '2'
+	LINIA 16: $t1 := vlocalint1 ADDI 1
+	LINIA 17: vlocalint1 := $t1
+	LINIA 18: RETURN
+
+HALT
+
+GLOBAL:
+
+	LINIA 1: i := 0
+	LINIA 2: $t1 := FTI 1.6
+	LINIA 3: k := $t1
+	LINIA 4: vfloat := 1.193
+	LINIA 5: vfloat2 := 2.13
+	LINIA 6: $t2 := FTD 1.1999
+	LINIA 7: vdouble := $t2
+	LINIA 8: $t3 := ITL 65535
+	LINIA 9: vlong := $t3
+	LINIA 10: vchar := 'a'
+	LINIA 11: vchar2 := 'b'
+	LINIA 12: $t4 := ITS 9
+	LINIA 13: vshort := $t4

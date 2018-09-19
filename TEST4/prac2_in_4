@@ -1,0 +1,37 @@
+int i = 2 * 6;
+
+typedef struct t_alumne {
+   int a;
+   char b;
+   double c;
+   int d;
+} t_alumne;
+
+t_alumne alumne1, alumne2;
+
+int main(void) {
+   int vlocalint1, vlocalint2;
+   char vlocalchar1, vlocalchar2;
+   double varraydouble1[10];
+   double totalSum;
+   int final;
+   
+   vlocalint1 = 0;
+   vlocalint2 = vlocalint1;
+   vlocalchar1 = 'a'; vlocalchar2 = 'b';
+   
+   while (vlocalint1 <= 10) {
+      vlocalint2 += varraydouble1[vlocalint1];
+      vlocalint1++;
+   }
+   
+   do {
+      vlocalchar1 = vlocalint1; 
+      vlocalint1++; 
+      for(; i < 10;) { i++; }
+   } while (vlocalint1 < 100);
+   
+   for(i = 0; !(i > 10); i++) {
+      totalSum += varraydouble1[alumne2.d * alumne1.a] * i;
+   }
+} 

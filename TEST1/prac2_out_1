@@ -1,0 +1,436 @@
+>>> linia 1: ID_INT REDUCE TO type_specifier
+>>> linia 1: type_specifier REDUCE TO declaration_specifiers
+>>> linia 1: ID_IDENTIFICADOR -> [i] REDUCE TO declarator
+>>> linia 1: ID_INTEGER_CONSTANT -> [0] REDUCE TO constant
+>>> linia 1: constant REDUCE TO primary_expression
+>>> linia 1: primary_expression REDUCE TO postfix_expression
+>>> linia 1: postfix_expression REDUCE TO unary_expression
+>>> linia 1: unary_expression REDUCE TO cast_expression
+>>> linia 1: cast_expression REDUCE TO multiplicative_expression
+>>> linia 1: multiplicative_expression REDUCE TO additive_expression
+>>> linia 1: additive_expression REDUCE TO relational_expression
+>>> linia 1: relational_expression REDUCE TO equality_expression
+>>> linia 1: equality_expression REDUCE TO logical_AND_expression
+>>> linia 1: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 1: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 1: conditional_expression REDUCE TO assignment_expression
+>>> linia 1: assignment_expression REDUCE TO initializer
+>>> linia 1: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 1: la variable -> [i] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: i
+			Tipus: INT        Ambit -1  Array: NO
+>>> linia 1: init_declarator REDUCE TO init_declarator_list
+>>> linia 1: ID_IDENTIFICADOR -> [j] REDUCE TO declarator
+>>> linia 1: declarator REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 1: la variable -> [j] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: j
+			Tipus: INT        Ambit -1  Array: NO
+>>> linia 1: init_declarator_list,init_declarator REDUCE TO init_declarator_list
+>>> linia 1: ID_IDENTIFICADOR -> [k] REDUCE TO declarator
+>>> linia 1: ID_FLOATING_CONSTANT -> [1.6] REDUCE TO constant
+>>> linia 1: constant REDUCE TO primary_expression
+>>> linia 1: primary_expression REDUCE TO postfix_expression
+>>> linia 1: postfix_expression REDUCE TO unary_expression
+>>> linia 1: unary_expression REDUCE TO cast_expression
+>>> linia 1: cast_expression REDUCE TO multiplicative_expression
+>>> linia 1: multiplicative_expression REDUCE TO additive_expression
+>>> linia 1: additive_expression REDUCE TO relational_expression
+>>> linia 1: relational_expression REDUCE TO equality_expression
+>>> linia 1: equality_expression REDUCE TO logical_AND_expression
+>>> linia 1: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 1: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 1: conditional_expression REDUCE TO assignment_expression
+>>> linia 1: assignment_expression REDUCE TO initializer
+>>> linia 1: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 1: la variable -> [k] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: k
+			Tipus: INT        Ambit -1  Array: NO
+>>> linia 1: init_declarator_list,init_declarator REDUCE TO init_declarator_list
+>>> linia 1: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 1: declaration REDUCE external_declaration
+>>> linia 1: external_declaration REDUCE TO translation_unit
+>>> linia 2: ID_FLOAT REDUCE TO type_specifier
+>>> linia 2: type_specifier REDUCE TO declaration_specifiers
+>>> linia 2: ID_IDENTIFICADOR -> [vfloat] REDUCE TO declarator
+>>> linia 2: ID_FLOATING_CONSTANT -> [1.193] REDUCE TO constant
+>>> linia 2: constant REDUCE TO primary_expression
+>>> linia 2: primary_expression REDUCE TO postfix_expression
+>>> linia 2: postfix_expression REDUCE TO unary_expression
+>>> linia 2: unary_expression REDUCE TO cast_expression
+>>> linia 2: cast_expression REDUCE TO multiplicative_expression
+>>> linia 2: multiplicative_expression REDUCE TO additive_expression
+>>> linia 2: additive_expression REDUCE TO relational_expression
+>>> linia 2: relational_expression REDUCE TO equality_expression
+>>> linia 2: equality_expression REDUCE TO logical_AND_expression
+>>> linia 2: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 2: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 2: conditional_expression REDUCE TO assignment_expression
+>>> linia 2: assignment_expression REDUCE TO initializer
+>>> linia 2: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 2: la variable -> [vfloat] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vfloat
+			Tipus: FLOAT      Ambit -1  Array: NO
+>>> linia 2: init_declarator REDUCE TO init_declarator_list
+>>> linia 2: ID_IDENTIFICADOR -> [vfloat2] REDUCE TO declarator
+>>> linia 2: ID_FLOATING_CONSTANT -> [2.13] REDUCE TO constant
+>>> linia 2: constant REDUCE TO primary_expression
+>>> linia 2: primary_expression REDUCE TO postfix_expression
+>>> linia 2: postfix_expression REDUCE TO unary_expression
+>>> linia 2: unary_expression REDUCE TO cast_expression
+>>> linia 2: cast_expression REDUCE TO multiplicative_expression
+>>> linia 2: multiplicative_expression REDUCE TO additive_expression
+>>> linia 2: additive_expression REDUCE TO relational_expression
+>>> linia 2: relational_expression REDUCE TO equality_expression
+>>> linia 2: equality_expression REDUCE TO logical_AND_expression
+>>> linia 2: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 2: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 2: conditional_expression REDUCE TO assignment_expression
+>>> linia 2: assignment_expression REDUCE TO initializer
+>>> linia 2: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 2: la variable -> [vfloat2] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vfloat2
+			Tipus: FLOAT      Ambit -1  Array: NO
+>>> linia 2: init_declarator_list,init_declarator REDUCE TO init_declarator_list
+>>> linia 2: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 2: declaration REDUCE external_declaration
+>>> linia 2: translation_unit external_declaration REDUCE TO translation_unit
+>>> linia 3: ID_DOUBLE REDUCE TO type_specifier
+>>> linia 3: type_specifier REDUCE TO declaration_specifiers
+>>> linia 3: ID_IDENTIFICADOR -> [vdouble] REDUCE TO declarator
+>>> linia 3: ID_FLOATING_CONSTANT -> [1.1999] REDUCE TO constant
+>>> linia 3: constant REDUCE TO primary_expression
+>>> linia 3: primary_expression REDUCE TO postfix_expression
+>>> linia 3: postfix_expression REDUCE TO unary_expression
+>>> linia 3: unary_expression REDUCE TO cast_expression
+>>> linia 3: cast_expression REDUCE TO multiplicative_expression
+>>> linia 3: multiplicative_expression REDUCE TO additive_expression
+>>> linia 3: additive_expression REDUCE TO relational_expression
+>>> linia 3: relational_expression REDUCE TO equality_expression
+>>> linia 3: equality_expression REDUCE TO logical_AND_expression
+>>> linia 3: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 3: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 3: conditional_expression REDUCE TO assignment_expression
+>>> linia 3: assignment_expression REDUCE TO initializer
+>>> linia 3: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 3: la variable -> [vdouble] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vdouble
+			Tipus: DOUBLE     Ambit -1  Array: NO
+>>> linia 3: init_declarator REDUCE TO init_declarator_list
+>>> linia 3: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 3: declaration REDUCE external_declaration
+>>> linia 3: translation_unit external_declaration REDUCE TO translation_unit
+>>> linia 4: ID_LONG REDUCE TO type_specifier
+>>> linia 4: type_specifier REDUCE TO declaration_specifiers
+>>> linia 4: ID_IDENTIFICADOR -> [vlong] REDUCE TO declarator
+>>> linia 4: ID_INTEGER_CONSTANT -> [65535] REDUCE TO constant
+>>> linia 4: constant REDUCE TO primary_expression
+>>> linia 4: primary_expression REDUCE TO postfix_expression
+>>> linia 4: postfix_expression REDUCE TO unary_expression
+>>> linia 4: unary_expression REDUCE TO cast_expression
+>>> linia 4: cast_expression REDUCE TO multiplicative_expression
+>>> linia 4: multiplicative_expression REDUCE TO additive_expression
+>>> linia 4: additive_expression REDUCE TO relational_expression
+>>> linia 4: relational_expression REDUCE TO equality_expression
+>>> linia 4: equality_expression REDUCE TO logical_AND_expression
+>>> linia 4: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 4: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 4: conditional_expression REDUCE TO assignment_expression
+>>> linia 4: assignment_expression REDUCE TO initializer
+>>> linia 4: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 4: la variable -> [vlong] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vlong
+			Tipus: LONG       Ambit -1  Array: NO
+>>> linia 4: init_declarator REDUCE TO init_declarator_list
+>>> linia 4: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 4: declaration REDUCE external_declaration
+>>> linia 4: translation_unit external_declaration REDUCE TO translation_unit
+>>> linia 5: ID_CHAR REDUCE TO type_specifier
+>>> linia 5: type_specifier REDUCE TO declaration_specifiers
+>>> linia 5: ID_IDENTIFICADOR -> [vchar] REDUCE TO declarator
+>>> linia 5: ID_CHARACTER_CONSTANT -> [a] REDUCE TO constant
+>>> linia 5: constant REDUCE TO primary_expression
+>>> linia 5: primary_expression REDUCE TO postfix_expression
+>>> linia 5: postfix_expression REDUCE TO unary_expression
+>>> linia 5: unary_expression REDUCE TO cast_expression
+>>> linia 5: cast_expression REDUCE TO multiplicative_expression
+>>> linia 5: multiplicative_expression REDUCE TO additive_expression
+>>> linia 5: additive_expression REDUCE TO relational_expression
+>>> linia 5: relational_expression REDUCE TO equality_expression
+>>> linia 5: equality_expression REDUCE TO logical_AND_expression
+>>> linia 5: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 5: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 5: conditional_expression REDUCE TO assignment_expression
+>>> linia 5: assignment_expression REDUCE TO initializer
+>>> linia 5: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 5: la variable -> [vchar] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vchar
+			Tipus: CHAR       Ambit -1  Array: NO
+>>> linia 5: init_declarator REDUCE TO init_declarator_list
+>>> linia 5: ID_IDENTIFICADOR -> [vchar2] REDUCE TO declarator
+>>> linia 5: ID_CHARACTER_CONSTANT -> [b] REDUCE TO constant
+>>> linia 5: constant REDUCE TO primary_expression
+>>> linia 5: primary_expression REDUCE TO postfix_expression
+>>> linia 5: postfix_expression REDUCE TO unary_expression
+>>> linia 5: unary_expression REDUCE TO cast_expression
+>>> linia 5: cast_expression REDUCE TO multiplicative_expression
+>>> linia 5: multiplicative_expression REDUCE TO additive_expression
+>>> linia 5: additive_expression REDUCE TO relational_expression
+>>> linia 5: relational_expression REDUCE TO equality_expression
+>>> linia 5: equality_expression REDUCE TO logical_AND_expression
+>>> linia 5: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 5: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 5: conditional_expression REDUCE TO assignment_expression
+>>> linia 5: assignment_expression REDUCE TO initializer
+>>> linia 5: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 5: la variable -> [vchar2] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vchar2
+			Tipus: CHAR       Ambit -1  Array: NO
+>>> linia 5: init_declarator_list,init_declarator REDUCE TO init_declarator_list
+>>> linia 5: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 5: declaration REDUCE external_declaration
+>>> linia 5: translation_unit external_declaration REDUCE TO translation_unit
+>>> linia 6: ID_SHORT REDUCE TO type_specifier
+>>> linia 6: type_specifier REDUCE TO declaration_specifiers
+>>> linia 6: ID_IDENTIFICADOR -> [vshort] REDUCE TO declarator
+>>> linia 6: ID_INTEGER_CONSTANT -> [9] REDUCE TO constant
+>>> linia 6: constant REDUCE TO primary_expression
+>>> linia 6: primary_expression REDUCE TO postfix_expression
+>>> linia 6: postfix_expression REDUCE TO unary_expression
+>>> linia 6: unary_expression REDUCE TO cast_expression
+>>> linia 6: cast_expression REDUCE TO multiplicative_expression
+>>> linia 6: multiplicative_expression REDUCE TO additive_expression
+>>> linia 6: additive_expression REDUCE TO relational_expression
+>>> linia 6: relational_expression REDUCE TO equality_expression
+>>> linia 6: equality_expression REDUCE TO logical_AND_expression
+>>> linia 6: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 6: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 6: conditional_expression REDUCE TO assignment_expression
+>>> linia 6: assignment_expression REDUCE TO initializer
+>>> linia 6: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 6: la variable -> [vshort] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vshort
+			Tipus: SHORT      Ambit -1  Array: NO
+>>> linia 6: init_declarator REDUCE TO init_declarator_list
+>>> linia 6: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 6: declaration REDUCE external_declaration
+>>> linia 6: translation_unit external_declaration REDUCE TO translation_unit
+>>> linia 7: ID_FLOAT REDUCE TO type_specifier
+>>> linia 7: type_specifier REDUCE TO declaration_specifiers
+>>> linia 7: ID_IDENTIFICADOR -> [varrayf] REDUCE TO declarator
+>>> linia 7: declarator[ID_INTEGER_CONSTANT -> [12]] REDUCE TO declarator
+>>> linia 7: declarator REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 7: la variable -> [varrayf] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: varrayf
+			Tipus: FLOAT      Ambit -1  Array: SI  Tamany_Array: 12
+>>> linia 7: init_declarator REDUCE TO init_declarator_list
+>>> linia 7: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 7: declaration REDUCE external_declaration
+>>> linia 7: translation_unit external_declaration REDUCE TO translation_unit
+>>> linia 8: ID_INT REDUCE TO type_specifier
+>>> linia 8: type_specifier REDUCE TO declaration_specifiers
+>>> linia 8: ID_IDENTIFICADOR -> [varrayi] REDUCE TO declarator
+>>> linia 8: declarator[ID_INTEGER_CONSTANT -> [7]] REDUCE TO declarator
+>>> linia 8: declarator REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 8: la variable -> [varrayi] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: varrayi
+			Tipus: INT        Ambit -1  Array: SI  Tamany_Array: 7
+>>> linia 8: init_declarator REDUCE TO init_declarator_list
+>>> linia 8: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 8: declaration REDUCE external_declaration
+>>> linia 8: translation_unit external_declaration REDUCE TO translation_unit
+>>> linia 9: ID_DOUBLE REDUCE TO type_specifier
+>>> linia 9: type_specifier REDUCE TO declaration_specifiers
+>>> linia 9: ID_IDENTIFICADOR -> [varrayd] REDUCE TO declarator
+>>> linia 9: declarator[ID_INTEGER_CONSTANT -> [2]] REDUCE TO declarator
+>>> linia 9: declarator REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 9: la variable -> [varrayd] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: varrayd
+			Tipus: DOUBLE     Ambit -1  Array: SI  Tamany_Array: 2
+>>> linia 9: init_declarator REDUCE TO init_declarator_list
+>>> linia 9: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 9: declaration REDUCE external_declaration
+>>> linia 9: translation_unit external_declaration REDUCE TO translation_unit
+>>> linia 11: ID_STRUCT REDUCE TO struct_or_union
+>>> linia 12: ID_INT REDUCE TO type_specifier
+>>> linia 12: type_specifier REDUCE TO specifier_qualifier_list
+>>> linia 12: ID_IDENTIFICADOR -> [a] REDUCE TO declarator
+>>> linia 12: declarator REDUCE TO struct_declarator
+>>> linia 12: struct_declarator REDUCE TO struct_declarator_list
+>>> linia 12: specifier_qualifier_list struct_declarator_list; REDUCE TO struct_declaration
+>>> linia 12: struct_declaration REDUCE TO struct_declaration_list
+>>> linia 13: ID_CHAR REDUCE TO type_specifier
+>>> linia 13: type_specifier REDUCE TO specifier_qualifier_list
+>>> linia 13: ID_IDENTIFICADOR -> [b] REDUCE TO declarator
+>>> linia 13: declarator REDUCE TO struct_declarator
+>>> linia 13: struct_declarator REDUCE TO struct_declarator_list
+>>> linia 13: specifier_qualifier_list struct_declarator_list; REDUCE TO struct_declaration
+>>> linia 13: struct_declaration_list struct_declaration REDUCE TO struct_declaration_list
+>>> linia 14: ID_DOUBLE REDUCE TO type_specifier
+>>> linia 14: type_specifier REDUCE TO specifier_qualifier_list
+>>> linia 14: ID_IDENTIFICADOR -> [c] REDUCE TO declarator
+>>> linia 14: declarator REDUCE TO struct_declarator
+>>> linia 14: struct_declarator REDUCE TO struct_declarator_list
+>>> linia 14: specifier_qualifier_list struct_declarator_list; REDUCE TO struct_declaration
+>>> linia 14: struct_declaration_list struct_declaration REDUCE TO struct_declaration_list
+>>> linia 15: struct_or_union ID_IDENTIFICADOR -> [t_alumne] { struct_declaration_list } REDUCE TO struct_or_union_specifier
+>>> linia 15: struct_or_union_specifier REDUCE TO type_specifier
+>>> linia 15: type_specifier REDUCE TO declaration_specifiers
+>>> linia 15: ID_IDENTIFICADOR -> [t_alumne] REDUCE TO declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 15: el tipus -> [t_alumne] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: t_alumne
+			Tipus: STRUCT     Ambit -1  Array: SI  Tamany_Array: 2
+>>> linia 15: ID_TYPEDEF declaration_specifiers declarator; REDUCE TO declaration
+>>> linia 15: declaration REDUCE external_declaration
+>>> linia 15: translation_unit external_declaration REDUCE TO translation_unit
+>>> linia 17: ID_TYPEDEF_IDENTIFIER REDUCE TO typedef_name
+>>> linia 17: typedef_name REDUCE TO type_specifier
+>>> linia 17: type_specifier REDUCE TO declaration_specifiers
+>>> linia 17: ID_IDENTIFICADOR -> [alumne1] REDUCE TO declarator
+>>> linia 17: declarator REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 17: la variable -> [alumne1] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: alumne1
+			Tipus: STRUCT     Ambit -1  Array: NO
+			[ - ] Struct: alumne1
+			[ - ] 3 Camps:
+				    Nom: a  Tipus: INT        Array: NO
+				    Nom: b  Tipus: CHAR       Array: NO
+				    Nom: c  Tipus: DOUBLE     Array: NO
+>>> linia 17: init_declarator REDUCE TO init_declarator_list
+>>> linia 17: ID_IDENTIFICADOR -> [alumne2] REDUCE TO declarator
+>>> linia 17: declarator REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 17: la variable -> [alumne2] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: alumne2
+			Tipus: STRUCT     Ambit -1  Array: NO
+			[ - ] Struct: alumne2
+			[ - ] 3 Camps:
+				    Nom: a  Tipus: INT        Array: NO
+				    Nom: b  Tipus: CHAR       Array: NO
+				    Nom: c  Tipus: DOUBLE     Array: NO
+>>> linia 17: init_declarator_list,init_declarator REDUCE TO init_declarator_list
+>>> linia 17: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 17: declaration REDUCE external_declaration
+>>> linia 17: translation_unit external_declaration REDUCE TO translation_unit
+>>> linia 19: ID_INT REDUCE TO type_specifier
+>>> linia 19: type_specifier REDUCE TO declaration_specifiers
+>>> linia 19: ID_IDENTIFICADOR -> [main] REDUCE TO declarator
+>>> linia 19: ID_VOID REDUCE TO type_specifier
+>>> linia 19: type_specifier REDUCE TO declaration_specifiers
+>>> linia 19: declaration_specifiers REDUCE TO parameter_declaration
+>>> linia 19: parameter_declaration REDUCE TO parameter_list
+>>> linia 19: declarator(parameter_list) REDUCE TO declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 19: s'ha introduit el nou ambit amb identificador -> [0]
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 19: la funcio -> [main] s'ha insertat correctament a la taula de simbols
+	[ - ] Funcio: main
+	[ - ] 0 Parametres:
+	[ - ] Tipus Retorn: INT      
+>>> linia 20: ID_INT REDUCE TO type_specifier
+>>> linia 20: type_specifier REDUCE TO declaration_specifiers
+>>> linia 20: ID_IDENTIFICADOR -> [vlocalint1] REDUCE TO declarator
+>>> linia 20: ID_INTEGER_CONSTANT -> [10] REDUCE TO constant
+>>> linia 20: constant REDUCE TO primary_expression
+>>> linia 20: primary_expression REDUCE TO postfix_expression
+>>> linia 20: postfix_expression REDUCE TO unary_expression
+>>> linia 20: unary_expression REDUCE TO cast_expression
+>>> linia 20: cast_expression REDUCE TO multiplicative_expression
+>>> linia 20: multiplicative_expression REDUCE TO additive_expression
+>>> linia 20: additive_expression REDUCE TO relational_expression
+>>> linia 20: relational_expression REDUCE TO equality_expression
+>>> linia 20: equality_expression REDUCE TO logical_AND_expression
+>>> linia 20: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 20: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 20: conditional_expression REDUCE TO assignment_expression
+>>> linia 20: assignment_expression REDUCE TO initializer
+>>> linia 20: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 20: la variable -> [vlocalint1] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vlocalint1
+			Tipus: INT        Ambit 0  Array: NO
+>>> linia 20: init_declarator REDUCE TO init_declarator_list
+>>> linia 20: ID_IDENTIFICADOR -> [vlocalint2] REDUCE TO declarator
+>>> linia 20: ID_INTEGER_CONSTANT -> [20] REDUCE TO constant
+>>> linia 20: constant REDUCE TO primary_expression
+>>> linia 20: primary_expression REDUCE TO postfix_expression
+>>> linia 20: postfix_expression REDUCE TO unary_expression
+>>> linia 20: unary_expression REDUCE TO cast_expression
+>>> linia 20: cast_expression REDUCE TO multiplicative_expression
+>>> linia 20: multiplicative_expression REDUCE TO additive_expression
+>>> linia 20: additive_expression REDUCE TO relational_expression
+>>> linia 20: relational_expression REDUCE TO equality_expression
+>>> linia 20: equality_expression REDUCE TO logical_AND_expression
+>>> linia 20: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 20: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 20: conditional_expression REDUCE TO assignment_expression
+>>> linia 20: assignment_expression REDUCE TO initializer
+>>> linia 20: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 20: la variable -> [vlocalint2] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vlocalint2
+			Tipus: INT        Ambit 0  Array: NO
+>>> linia 20: init_declarator_list,init_declarator REDUCE TO init_declarator_list
+>>> linia 20: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 20: declaration REDUCE TO declaration_list
+>>> linia 21: ID_CHAR REDUCE TO type_specifier
+>>> linia 21: type_specifier REDUCE TO declaration_specifiers
+>>> linia 21: ID_IDENTIFICADOR -> [vlocalchar1] REDUCE TO declarator
+>>> linia 21: declarator REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 21: la variable -> [vlocalchar1] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vlocalchar1
+			Tipus: CHAR       Ambit 0  Array: NO
+>>> linia 21: init_declarator REDUCE TO init_declarator_list
+>>> linia 21: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 21: declaration_list declaration REDUCE TO declaration_list
+>>> linia 22: ID_CHAR REDUCE TO type_specifier
+>>> linia 22: type_specifier REDUCE TO declaration_specifiers
+>>> linia 22: ID_IDENTIFICADOR -> [vlocalstr1] REDUCE TO declarator
+>>> linia 22: declarator[ID_INTEGER_CONSTANT -> [12]] REDUCE TO declarator
+>>> linia 22: ID_STRING -> [COMPILADORS2] REDUCE TO primary_expression
+>>> linia 22: primary_expression REDUCE TO postfix_expression
+>>> linia 22: postfix_expression REDUCE TO unary_expression
+>>> linia 22: unary_expression REDUCE TO cast_expression
+>>> linia 22: cast_expression REDUCE TO multiplicative_expression
+>>> linia 22: multiplicative_expression REDUCE TO additive_expression
+>>> linia 22: additive_expression REDUCE TO relational_expression
+>>> linia 22: relational_expression REDUCE TO equality_expression
+>>> linia 22: equality_expression REDUCE TO logical_AND_expression
+>>> linia 22: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 22: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 22: conditional_expression REDUCE TO assignment_expression
+>>> linia 22: assignment_expression REDUCE TO initializer
+>>> linia 22: declarator '=' initializer REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 22: la variable -> [vlocalstr1] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vlocalstr1
+			Tipus: CHAR       Ambit 0  Array: SI  Tamany_Array: 12
+>>> linia 22: init_declarator REDUCE TO init_declarator_list
+>>> linia 22: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 22: declaration_list declaration REDUCE TO declaration_list
+>>> linia 23: ID_FLOAT REDUCE TO type_specifier
+>>> linia 23: type_specifier REDUCE TO declaration_specifiers
+>>> linia 23: ID_IDENTIFICADOR -> [vlocalfloat1] REDUCE TO declarator
+>>> linia 23: declarator REDUCE TO init_declarator
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 23: la variable -> [vlocalfloat1] s'ha insertat correctament a la taula de simbols
+	[ - ] Variable: vlocalfloat1
+			Tipus: FLOAT      Ambit 0  Array: NO
+>>> linia 23: init_declarator REDUCE TO init_declarator_list
+>>> linia 23: declaration_specifiers init_declarator_list; REDUCE TO declaration
+>>> linia 23: declaration_list declaration REDUCE TO declaration_list
+>>> linia 25: ID_IDENTIFICADOR -> [vlocalint1] REDUCE TO primary_expression
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 25: la variable -> [vlocalint1] s'ha trobat en la taula de simbols
+>>> linia 25: primary_expression REDUCE TO postfix_expression
+>>> linia 25: postfix_expression++ REDUCE TO postfix_expression
+>>> linia 25: postfix_expression REDUCE TO unary_expression
+>>> linia 25: unary_expression REDUCE TO cast_expression
+>>> linia 25: cast_expression REDUCE TO multiplicative_expression
+>>> linia 25: multiplicative_expression REDUCE TO additive_expression
+>>> linia 25: additive_expression REDUCE TO relational_expression
+>>> linia 25: relational_expression REDUCE TO equality_expression
+>>> linia 25: equality_expression REDUCE TO logical_AND_expression
+>>> linia 25: logical_AND_expression REDUCE TO logical_OR_expression
+>>> linia 25: logical_OR_expression REDUCE TO conditional_expression
+>>> linia 25: conditional_expression REDUCE TO assignment_expression
+>>> linia 25: assignment_expression REDUCE TO expression
+>>> linia 25: expression; REDUCE TO expression_statement
+>>> linia 25: expression_statement REDUCE TO statement
+>>> linia 25: statement REDUCE TO statement_list
+>>> linia 26: { declaration_list statement_list } REDUCE TO compound_statement
+[ SINTACTIC/SEMANTIC -> OK ] >>> linia 26: s'ha eliminat l'ambit amb identificador -> [0]
+>>> linia 26: declaration_specifiers declarator compound_statement REDUCE TO function_definition
+>>> linia 26: function_definition REDUCE TO external_declaration
+>>> linia 26: translation_unit external_declaration REDUCE TO translation_unit
